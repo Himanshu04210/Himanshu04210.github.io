@@ -323,6 +323,7 @@ section{
     width: 100%;
     margin: auto;
     display: inline-block;
+    cursor: pointer;
 }
 .btn-project1 a{
     display: inline-block;
