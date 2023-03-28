@@ -251,7 +251,7 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 20%;
-    transition: 1s ease;
+    transition: .5s ease;
     box-shadow: 0 0 1rem black;
 }
 .skills-content>div>div{
