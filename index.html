@@ -1,318 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio | Himanshu Sahu</title>
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+  ></script>
+  
+  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+  <link
+     rel="stylesheet"
+     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+
 </head>
+
 <body>
-    <div id="home" class="nav-link home">
-        <div class="container">
-            <nav id="nav-menu">
-                <img src="images/logos.png" alt="logo" class="logo" >
-                <ul id="sidemenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about" class="nav-link about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects" class="nav-link projects" >Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li title="RESUME" id="resume-button-1"><a class="nav-link resume" id="resume-link-1"
-                    href="./Himanshu_Sahu_Resume.pdf" download="Himashu_Sahu_resume" target="_blank"><i
-                        class="fa-solid fa-file-arrow-down"></i><span>Resume</span> </a></li>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Hey 👋</h1>
-                &nbsp;
-                <p>I'm <span id="user-detail-name"> Himanshu Sahu. <br> </span> A passionate backend developer.</p>
-                <div class="resumebtn">
-                <button id="resume-button-2" class="btn"><a id="resume-link-2" target="_blank" href='./Himanshu_Sahu_Resume.pdf' download="Himanshu_Sahu_resume">Resume</a></button>
+    <header class="header" id="nav-menu">
+        <a href="#" class="logo">Portfolio.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active nav-link home">Home</a>
+            <a href="#about" style="--i:2" class="nav-link about">About </a>
+            <a href="#skills" style="--i:3" class="nav-link skills">Skills</a>
+            <a href="#projects" style="--i:4" class="nav-link projects">Projects</a>
+            <a href="#contact" style="--i:5" class="nav-link contact">Contact</a>
+            <a href="Himanshu_Sahu_Resume.pdf" class="btn nav-link resume" target="_blank" download="Himanshu_Sahu_Resume.pdf"
+                style="--i:5" id="resume-link-1"><i class='bx bx-down-arrow-alt'></i>Resume</a>
+        </nav>
+    </header>
+
+    <section class="Home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1 id="user-detail-name">Himanshu Sahu</h1>
+            <h3>And I'm a <span>Java Backend Developer</span></h3>
+            <p id="user-detail-intro">A passionate Java Backend Developer. I have the tenacity and smart-working mentality to pick up new technologies quickly & effectively.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/" target="_blank" style="--i:7"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/Himanshu04210" target="_blank" style="--i:8"><i
+                        class='bx bxl-github'></i></a>
             </div>
+            <a href="Himanshu_Sahu_Resume.pdf" id="resume-link-2" class="btn" target="_blank"
+                download="Himanshu_Sahu_Resume.pdf"><i class='bx bx-down-arrow-alt'></i>Resume</a>
+        </div>
+
+        <div class="home-img-home">
+            <img class="home-img" src="professional Image.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="About" id="about">
+        <div class="about_img">
+            <img src="professional Image.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About</h2>
+            <h3 id="about.about.section">Java Backend Developer</h3>
+            <p>A passionate and adaptable back-end developer, skilled in Java, MySQL, JDBC, Hybernate, Spring, JavaScript with proficiency in problem-solving. A dependable and responsible team player with an eye to detail. Looking for a position to enhance my skills while significantly contributing to the company's growth.</p>
+            <a href="#" class="btn">Read More<span><i class='bx bx-right-arrow-alt'></i></span></a>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="Skills" id="skills">
+
+        <div class="skills-box">
+            <h2 class="heading">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="box skills-card">
+                    <div> <img class="skills-card-img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+                            <h2 class="skills-card-name">HTML</h2>
+                    </div>
+                    
+                </div>
+                <div class="box skills-card">
+                    <div> <img class="skills-card-img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
+                            <h2 class="skills-card-name">CSS</h2>
+                    </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                <div class="box skills-card">
+                    <div><img class="skills-card-img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="">
+                            <h2 class="skills-card-name">JavaScript</h2>
+                        </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                <div class="box skills-card">
+                    <div> <img class="skills-card-img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                            <h2 class="skills-card-name">GitHub</h2>
+                    </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                <div class="box skills-card">
+                    <div><img class="skills-card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
+                        <h2 class="skills-card-name">Java</h2>
+                    </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                <div class="box skills-card">
+                    <div><img class="skills-card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="">
+                        <h2 class="skills-card-name">Spring</h2>
+                    </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                <div class="box skills-card">
+                    <div><img class="skills-card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">
+                        <h2 class="skills-card-name">mysql</h2>
+                    </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                <div class="box skills-card">
+                    <div><img class="skills-card-img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            alt="">
+                            <h2 class="skills-card-name">bootstrap</h2>
+                        </div>
+                    <!-- <div class="skills-card-name">HTML</div> -->
+                </div>
+                
             </div>
         </div>
-    </div> <!---------------------------------------About------------------------------------>
-    <div id="about" class="about section">
-        <div class="container"><h1 class="sub-title" class="nav-link about" class="about section" >About Me</h1>
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./professional Image.png" alt="image" class="home-img">
-                </div>
-                <div class="about-col-2"  id="user-detail-intro">
-                    <p>>Welcome to my portfolio! I am a skilled Full-Stack web developer with a strong passion for coding and developing highly functional web applications and websites. Hailing from Sitamarhi, Bihar, India, I hold a Diploma in Mechanical Engineering from IIMT Greater-Noida.
+    </section>
 
-                        My experience in Full-Stack web development from Masai has equipped me with the necessary skills to create both the front-end and back-end of web applications. I have a keen eye for detail and a strong focus on user experience, which enables me to create visually appealing and highly functional web applications that are both user-friendly and efficient.
-                        
-                        As a Full-Stack web developer, I am highly proficient in Node.js, Express.js, and MongoDB stack, and have experience in building Full-Stack clones of existing web applications. I am highly motivated and enjoy taking on new challenges and solving complex problems, which has allowed me to create highly scalable and responsive web applications that are tailored to meet the specific needs of my clients.
-                        
-                        In addition to my technical expertise, I possess excellent communication and collaboration skills, which allow me to work effectively with clients and team members. I am committed to delivering high-quality work within the specified timelines and always strive to exceed client expectations.
-                        
-                        If you're looking for a talented and motivated Full-Stack web developer to take on your next web development project, please do not hesitate to get in touch. I would be more than happy to discuss your project requirements and how I can help you achieve your web development goals.
-                    </p>
-                </div>
+    <!-- Project section -->
+    <section class="Project" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="project-box">
+            <div class="image project-card"><img src="orbitz_clone_screenshot.png" alt="">
+                <h2 class="heading-site project-title">Orbitz</h2>
+                <p class="project-description">Orbitz.com is a travel fare aggregator website and travel
+                    metasearch engine. </p>
+                <p class="tech project-tech-stack"><Strong
+                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
+                    HTML, CSS, Java Script</p>
+                <p class="btn-project1"><a class="project-deployed-link"
+                        href="https://coruscating-dusk-3a0b5d.netlify.app/" target="_blank">Deployed</a>
+                    <a class="project-github-link" href="https://github.com/Himanshu04210/broad-back-2017"
+                        target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="image project-card"><img src="paytm_mall_clone.png" alt="">
+                <h2 class="heading-site project-title">Paytm Mall</h2>
+                <p class="project-description">Paytm Mall strives hard to make online shopping a more pleasant and cost-effective experience by providing top-
+                    quality products.</p>
+                <p class="tech project-tech-stack"><Strong
+                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
+                    HTML, CSS, Java Script</p>
+                <p class="btn-project1"><a class="project-deployed-link" href="https://delicate-pasca-d3c98b.netlify.app/"
+                        target="_blank">Deployed</a>
+                    <a class="project-github-link" href="https://github.com/Himanshu04210/-posh-title-8378"
+                        target="_blank">GitHub</a>
+                </p>
+            </div>
+
+            <div class="image project-card"><img src="Masai_vaccination_clone.png" alt="">
+                <h2 class="heading-site project-title">Masai Vaccination</h2>
+                <p class="project-description">Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact with them. </p>
+                <p class="tech project-tech-stack"><Strong
+                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
+                    HTML, CSS, Java Script</p>
+                <p class="btn-project1"><a class="project-deployed-link"
+                        href="https://playful-axolotl-e88a6b.netlify.app/" target="_blank">Deployed</a>
+                    <a class="project-github-link" href="https://github.com/Himanshu04210/Masai-Vaccination"
+                        target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="image project-card"><img src="paytm_mall_clone.png" alt="">
+                <h2 class="heading-site project-title">Paytm Mall</h2>
+                <p class="project-description">Paytm Mall strives hard to make online shopping a more pleasant and cost-effective experience by providing top-
+                    quality products.</p>
+                <p class="tech project-tech-stack"><Strong
+                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
+                    HTML, CSS, Java Script</p>
+                <p class="btn-project1"><a class="project-deployed-link" href="https://delicate-pasca-d3c98b.netlify.app/"
+                        target="_blank">Deployed</a>
+                    <a class="project-github-link" href="https://github.com/Himanshu04210/-posh-title-8378"
+                        target="_blank">GitHub</a>
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--------------------------------------skills---------------------------------->
-    <div id="skills" class="nav-link skills">
-        <div class="container">
-            <h1 class="sub-title">Skills</h1>
-            <div class="services-list">
-                <div class="skills-card">
-                    <!-- <i class="fas fa-code"></i> -->
-                    <h2 class="skills-card-name">Front End</h2>
-                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
-                    <a href="#">Learn More</a>
+    <!-- Github calender section -->
+
+    <section class="react-activity-calendar">
+
+        <div class="calendar" style="background-color: white; color: rgb(79, 79, 79);">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+    </section>
+
+
+
+    <!-- contact Section -->
+    <section class="Contact" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="contact-content">
+            <div class="contact-box">
+                <h3>Details</h3>
+                <p class="text">Got a project? Reach out and let's work together on something exciting. Big or small.
+                    Mobile or web.</p>
+                <div class="icon">
+                    <span><i class='bx bxs-envelope'></i></span>
+                    <a id="contact-email">himanshupoly76075@gmail.com</a>
                 </div>
-                <div class="skills-card">
-                    <!-- <i class="fas fa-crop-alt"></i> -->
-                    <h2 class="skills-card-name">Back End</h2>
-                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
-                    <a href="#">Learn More</a>
+                <div class="icon">
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/"
+                        target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/" target="_blank">Linkedin</a>
                 </div>
-                <div class="skills-card">
-                    <!-- <i class="fab fa-app-store"></i> -->
-                    <h2 class="skills-card-name">Tools</h2>
-                    <i class="fa-brands fa-square-js"></i>
-                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
-                    <a href="#">Learn More</a>
+                <div class="icon">
+                    <a id="contact-github" href="https://github.com/Himanshu04210" target="_blank"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://github.com/Himanshu04210" target="_blank">GitHub</a>
                 </div>
+                <div class="icon">
+                    <span><i class='bx bxs-phone-call'></i></span>
+                    <span id="contact-phone">+91 8957730421</span>
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+                <h3>Message Me</h3>
+                <form>
+                    <div class="name-email input">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="subject input">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="message input">
+                        <textarea name="message" id="message" cols="100" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
             </div>
         </div>
-    </div>
-    <!--------------------------------------Projects---------------------------------->
+    </section>
 
-    <div id="projects">
-        <h1>Projects</h1>
-        <div class="projects-body">
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="./avatars/TNS.jpg"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">First Step</h3>
-                    <p class="project-description">
-                        An e-commerce website of footwear products where you will find 
-                        one of the best and exclusive selection of shoes, boots and slippers.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png""/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
-                            <p>Node.js</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
-                            <p>Express</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
-                            <p>Mongo DB</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Himanshu04210/-posh-title-8378" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="./avatars/MakeApp.jpg"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Fashion Hub</h3>
-                    <p class="project-description">
-                        A clone of Nykaa, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Himanshu04210/-posh-title-8378" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="./avatars/TNS.jpg"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">First Step</h3>
-                    <p class="project-description">
-                        A clone of ClarksUSA which is a one stop shop for one of the best selections of shoes, boots and slippers you've witnessed.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
-                            <p>Node.js</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
-                            <p>Express</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
-                            <p>Mongo DB</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Himanshu04210/-posh-title-8378" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="./avatars/MakeApp.jpg"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Fashion Hub</h3>
-                    <p class="project-description">
-                        A clone of Nykaa, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Himanshu04210/-posh-title-8378" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   <!--GitHub-->
-   <div id="github">
-        <h1>GitHub Stats</h1>
-        <div class="react-activity-calendar">
-        </div>
-        <div id="github-stats">
-            <div>
-                <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Himanshu04210&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Himanshu04210"/>
-            </div>
-            <div>
-                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Himanshu04210&theme=radical&hide_border=false&include_all_commits=true&count_private=true
-                " alt="Himanshu04210"/>
-            </div>
-            <div>
-                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=Himanshu04210&theme=radical&hide_border=false
-                " alt="Himanshu04210" />
-            </div>
-        </div>
-    </div>
-    <!--------------------------------------Contact---------------------------------->
-    <div id="contact" class="nav-link contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <div>
-                    <h1 class="sub-title">Contact Me</h1>
-                    <a id="contact-email"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp; himanshupoly76075@gmail.com</a>
-                    <a id="contact-phone"><i class="fas fa-phone-square"></i>&nbsp;&nbsp; +91 8957730421</a>
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/" target="_blank"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;in/himanshu-sahu-bb4439246/</a>
-                    <a id="contact-github" href="https://github.com/Himanshu04210" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;github.com/Himanshu04210</a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Created Himanshu Sahu <i class="fas fa-heart"></i> </p>
-        </div>
-    </div>
-
-    <script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-    document.getElementById('resume-link-1').addEventListener("click",()=>{
-  window.location.assign("https://drive.google.com/file/d/1bCcaQSDLKWTFjPxoZcjjc_jaepL6zw1f/view?usp=share_link", target="_blank");
-})
-
-document.getElementById('resume-link-2').addEventListener("click",()=>{
-  window.location.assign("https://drive.google.com/file/d/1bCcaQSDLKWTFjPxoZcjjc_jaepL6zw1f/view?usp=share_link", target="_blank");
-})
-
-    </script>
 </body>
+<script src="index.js"></script>
+<script>
+    GitHubCalendar(".calendar", "Himanshu04210");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "Himanshu04210", { responsive: true });
+</script>
+
 </html>
