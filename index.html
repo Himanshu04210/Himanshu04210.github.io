@@ -2,271 +2,310 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Sahu Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="github.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://kit.fontawesome.com/71a9c32d59.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-    <script
-    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-  ></script>
-  
-  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-  <link
-     rel="stylesheet"
-     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/sweetalert/dist/sweetalert.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+  <link rel="shortcut icon" href="./images/portfolio-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header" id="nav-menu">
-        <a href="#" class="logo">Portfolio.</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" style="--i:1" class="active nav-link home">Home</a>
-            <a href="#about" style="--i:2" class="nav-link about">About </a>
-            <a href="#skills" style="--i:3" class="nav-link skills">Skills</a>
-            <a href="#projects" style="--i:4" class="nav-link projects">Projects</a>
-            <a href="#contact" style="--i:5" class="nav-link contact">Contact</a>
-            <a href="Himanshu_Sahu_Resume.pdf" class="btn nav-link resume" target="_blank" download="Himanshu_Sahu_Resume.pdf"
-                style="--i:5" id="resume-link-1"><i class='bx bx-down-arrow-alt'></i>Resume</a>
-        </nav>
-    </header>
+  <div id="header">
+    <div id="home">
+      <nav id="nav-menu">
+        <a href="#header">
+          <h1 class="logo"><span style="color: #ff004f">H</span>IMANSHU</h1>
+        </a>
+        <ul id="sidemenu">
+          <li><a href="#header" class="nav-link home">Home</a></li>
+          <li><a href="#about" class="nav-link about">About</a></li>
+          <li><a href="#skills" class="nav-link skills">Skills</a></li>
+          <li><a href="#github">Github</a></li>
+          <li><a href="#projects" class="nav-link projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link contact">Contact</a></li>
+          <li>
+            <button id="resume-button-1">
+              <a id="resume-link-1" href="/images/Himanshu_Sahu_Resume.pdf" target="_blank" class="nav-link resume"
+                download>Resume <i class="fa-solid fa-download"></i></a>
+            </button>
+          </li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
 
-    <section class="Home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1 id="user-detail-name">Himanshu Sahu</h1>
-            <h3>And I'm a <span>Java Backend Developer</span></h3>
-            <p id="user-detail-intro">A passionate Java Backend Developer. I have the tenacity and smart-working mentality to pick up new technologies quickly & effectively.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/" target="_blank" style="--i:7"><i
-                        class='bx bxl-linkedin-square'></i></a>
-                <a href="https://github.com/Himanshu04210" target="_blank" style="--i:8"><i
-                        class='bx bxl-github'></i></a>
+      <div class="header-text">
+        <p>Java Backend Developer</p>
+        <div id="type_div">
+          <h1>
+            Hi, I'm <span class="typing" id="user-detail-name">Himanshu Sahu</span><br />
+            From India
+          </h1>
+        </div>
+        <button id="resume-button-2"><a id="resume-link-2" href="/images/Himanshu_Sahu_Resume.pdf" target="_blank"
+            class="btn" download>Resume</a></button>
+      </div>
+    </div>
+  </div>
+
+
+<!-- About section -->
+  <div id="about" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/images/myImage.png" class="home-img" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p id="user-detail-intro">
+            I'm a skilled full-stack web developer experienced in HTML, CSS, JavaScript, Java, and mysql. I'm
+            passionate about creating dynamic and visually appealing web applications and have collaborated on projects
+            to create user-friendly interfaces and streamline user experiences.
+            <br><br>
+            I enjoy problem-solving and constantly strive to learn new technologies and techniques to improve my skills.
+            I believe that effective communication, attention to detail, and a strong work ethic are essential for
+            delivering high-quality projects that exceed expectations.
+            <br><br>
+            I'm excited about the opportunity to work with you as a full-stack web developer.
+          </p>
+
+          <div class="details">
+            <p class="skill-ed active" onclick="opentab('Skills')">
+              Soft Skills
+            </p>
+            <p class="skill-ed" onclick="opentab('Education')">Education</p>
+          </div>
+
+          <div class="contents active-tab" id="Skills">
+            <ul>
+              <li><span>Proactive</span></li>
+              <li><span>Problem Solving</span></li>
+              <li><span>Time Management</span></li>
+              <li><span>Communication</span></li>
+              <li><span>Remote work and Collaboration</span></li>
+            </ul>
+          </div>
+          <div class="contents" id="Education">
+            <ul>
+              <li>
+                <span>Full Stack Web Development</span><br />Masai School<br /> Aug 2022 - June 2023
+              </li>
+              <li>
+                <span>Polytechnic Diploma in Civil Engineering</span><br />Govt. Polytechnic Collage Orai<br />June 2019 - Aug 2022
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills" class="container">
+    <h1 class="sub-title">Technical Skills</h1>
+    <div id="skill_container"></div>
+  </div>
+
+  <div class="container git" id="github">
+    <h1 class="sub-title">GitHub Calendar</h1>
+    <div class="calendar react-activity-calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+    </div>
+    <div class="git-stats">
+      <div>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=Himanshu04210&theme=react&hide_border=false&include_all_commits=true&count_private=true"
+          alt="Github Stats" id="github-stats-card" />
+      </div>
+      <div>
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=Himanshu04210&theme=react&hide_border=false&include_all_commits=true&count_private=true"
+          alt="Streak Graph" id="github-streak-stats" />
+      </div>
+      <div>
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=tigmansh&hide_progress=true&theme=react&hide_border=false&include_all_commits=true&count_private=true"
+          alt="" id="github-top-langs">
+      </div>
+    </div>
+  </div>
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list">
+
+        <!-- First Project -->
+
+        <div class="work project-card">
+          <div id="project_Image">
+            <img src="images/orbitz_clone_screenshot.png" />
+          </div>
+          <div class="layer">
+            <h2 class="project-heading project-title">Orbitz</h2>
+
+            <p class="project-description">
+                Orbitz.com is a travel fare aggregator website and travel metasearch engine. <br><br>
+                An individual project developed by me within 5 working
+                days.
+            </p>
+
+            <p>
+              <span class="tech-stack project-tech-stack">Tech Stack : </span> HTML | CSS
+              | JavaScript
+            </p>
+            <div>
+              <a href="https://github.com/Himanshu04210/broad-back-2017" target="_blank"
+                class="project-github-link">Github</a>
+              <a href="https://jazzy-churros-3c7588.netlify.app/" target="_blank"
+                class="project-deployed-link">Live</a>
             </div>
-            <a href="Himanshu_Sahu_Resume.pdf" id="resume-link-2" class="btn" target="_blank"
-                download="Himanshu_Sahu_Resume.pdf"><i class='bx bx-down-arrow-alt'></i>Resume</a>
+          </div>
         </div>
 
-        <div class="home-img-home">
-            <img class="home-img" src="professional Image.png" alt="">
-        </div>
-    </section>
+        <!-- Second Project -->
 
-    <!-- about section -->
+        <div class="work project-card">
+          <div id="project_Image">
+            <img src="/images/paytm_mall_clone.png" />
+          </div>
+          <div class="layer">
+            <h2 class="project-heading project-title">Paytm Mall</h2>
 
-    <section class="About" id="about">
-        <div class="about_img">
-            <img src="professional Image.png" alt="">
-        </div>
+            <p class="project-description">
+              Paytm Mall strives hard to make online shopping a more pleasant and cost-effective experience by providing top- quality products. <br><br>
+              It was a collaborative project created in 5 days by a
+              team of 5 members.
+            </p>
 
-        <div class="about-content">
-            <h2 class="heading">About</h2>
-            <h3 id="about.about.section">Java Backend Developer</h3>
-            <p>A passionate and adaptable back-end developer, skilled in Java, MySQL, JDBC, Hybernate, Spring, JavaScript with proficiency in problem-solving. A dependable and responsible team player with an eye to detail. Looking for a position to enhance my skills while significantly contributing to the company's growth.</p>
-            <a href="#" class="btn">Read More<span><i class='bx bx-right-arrow-alt'></i></span></a>
-        </div>
-    </section>
-
-    <!-- skills section -->
-    <section class="Skills" id="skills">
-
-        <div class="skills-box">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="skills-content">
-                <div class="box skills-card">
-                    <div> <img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
-                            <h2 class="skills-card-name">HTML</h2>
-                    </div>
-                    
-                </div>
-                <div class="box skills-card">
-                    <div> <img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
-                            <h2 class="skills-card-name">CSS</h2>
-                    </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                <div class="box skills-card">
-                    <div><img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="">
-                            <h2 class="skills-card-name">JavaScript</h2>
-                        </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                <div class="box skills-card">
-                    <div> <img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
-                            <h2 class="skills-card-name">GitHub</h2>
-                    </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                <div class="box skills-card">
-                    <div><img class="skills-card-img"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
-                        <h2 class="skills-card-name">Java</h2>
-                    </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                <div class="box skills-card">
-                    <div><img class="skills-card-img"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="">
-                        <h2 class="skills-card-name">Spring</h2>
-                    </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                <div class="box skills-card">
-                    <div><img class="skills-card-img"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">
-                        <h2 class="skills-card-name">mysql</h2>
-                    </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                <div class="box skills-card">
-                    <div><img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                            alt="">
-                            <h2 class="skills-card-name">bootstrap</h2>
-                        </div>
-                    <!-- <div class="skills-card-name">HTML</div> -->
-                </div>
-                
+            <p>
+              <span class="tech-stack project-tech-stack">Tech Stack : </span> 
+              HTML | CSS | JavaScript
+            </p>
+            <div>
+              <a href="https://github.com/Himanshu04210/-posh-title-8378" target="_blank"
+                class="project-github-link">Github</a>
+              <a href="https://startling-malabi-fa5c09.netlify.app/" target="_blank"
+                class="project-deployed-link">Live</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Project section -->
-    <section class="Project" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="project-box">
-            <div class="image project-card"><img src="orbitz_clone_screenshot.png" alt="">
-                <h2 class="heading-site project-title">Orbitz</h2>
-                <p class="project-description">Orbitz.com is a travel fare aggregator website and travel
-                    metasearch engine. </p>
-                <p class="tech project-tech-stack"><Strong
-                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
-                    HTML, CSS, Java Script</p>
-                <p class="btn-project1"><a class="project-deployed-link"
-                        href="https://coruscating-dusk-3a0b5d.netlify.app/" target="_blank">Deployed</a>
-                    <a class="project-github-link" href="https://github.com/Himanshu04210/broad-back-2017"
-                        target="_blank">GitHub</a>
-                </p>
-            </div>
-            <div class="image project-card"><img src="paytm_mall_clone.png" alt="">
-                <h2 class="heading-site project-title">Paytm Mall</h2>
-                <p class="project-description">Paytm Mall strives hard to make online shopping a more pleasant and cost-effective experience by providing top-
-                    quality products.</p>
-                <p class="tech project-tech-stack"><Strong
-                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
-                    HTML, CSS, Java Script</p>
-                <p class="btn-project1"><a class="project-deployed-link" href="https://delicate-pasca-d3c98b.netlify.app/"
-                        target="_blank">Deployed</a>
-                    <a class="project-github-link" href="https://github.com/Himanshu04210/-posh-title-8378"
-                        target="_blank">GitHub</a>
-                </p>
-            </div>
-
-            <div class="image project-card"><img src="Masai_vaccination_clone.png" alt="">
-                <h2 class="heading-site project-title">Masai Vaccination</h2>
-                <p class="project-description">Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact with them. </p>
-                <p class="tech project-tech-stack"><Strong
-                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
-                    HTML, CSS, Java Script</p>
-                <p class="btn-project1"><a class="project-deployed-link"
-                        href="https://playful-axolotl-e88a6b.netlify.app/" target="_blank">Deployed</a>
-                    <a class="project-github-link" href="https://github.com/Himanshu04210/Masai-Vaccination"
-                        target="_blank">GitHub</a>
-                </p>
-            </div>
-            <div class="image project-card"><img src="paytm_mall_clone.png" alt="">
-                <h2 class="heading-site project-title">Paytm Mall</h2>
-                <p class="project-description">Paytm Mall strives hard to make online shopping a more pleasant and cost-effective experience by providing top-
-                    quality products.</p>
-                <p class="tech project-tech-stack"><Strong
-                        style="border: 2px solid #0ef; padding: 0 .3rem; margin-right: .5rem;">Tech Stack : </Strong>
-                    HTML, CSS, Java Script</p>
-                <p class="btn-project1"><a class="project-deployed-link" href="https://delicate-pasca-d3c98b.netlify.app/"
-                        target="_blank">Deployed</a>
-                    <a class="project-github-link" href="https://github.com/Himanshu04210/-posh-title-8378"
-                        target="_blank">GitHub</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Github calender section -->
-
-    <section class="react-activity-calendar">
-
-        <div class="calendar" style="background-color: white; color: rgb(79, 79, 79);">
-            <!-- Loading stuff -->
-            Loading the data just for you.
+          </div>
         </div>
 
-    </section>
+        <!-- Third Project -->
 
-
-
-    <!-- contact Section -->
-    <section class="Contact" id="contact">
-        <h2 class="heading">Contact</h2>
-        <div class="contact-content">
-            <div class="contact-box">
-                <h3>Details</h3>
-                <p class="text">Got a project? Reach out and let's work together on something exciting. Big or small.
-                    Mobile or web.</p>
-                <div class="icon">
-                    <span><i class='bx bxs-envelope'></i></span>
-                    <a id="contact-email">himanshupoly76075@gmail.com</a>
-                </div>
-                <div class="icon">
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/"
-                        target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/" target="_blank">Linkedin</a>
-                </div>
-                <div class="icon">
-                    <a id="contact-github" href="https://github.com/Himanshu04210" target="_blank"><i
-                            class='bx bxl-github'></i></a>
-                    <a href="https://github.com/Himanshu04210" target="_blank">GitHub</a>
-                </div>
-                <div class="icon">
-                    <span><i class='bx bxs-phone-call'></i></span>
-                    <span id="contact-phone">+91 8957730421</span>
-                </div>
-
+        <div class="work project-card">
+          <img src="images/Masai_vaccination_clone.png" />
+          <div class="layer">
+            <h2 class="project-heading project-title">Vaccination App</h2>
+            <p class="project-description">
+              Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact with them.
+            </p>
+            <p>
+              <span class="tech-stack project-tech-stack">Tech Stack : </span> HTML | CSS |
+              JavaScript
+            </p>
+            <div>
+              <a href="https://github.com/Himanshu04210/Masai-Vaccination" target="_blank" class="project-github-link">Github</a>
+              <a href="https://playful-axolotl-e88a6b.netlify.app/" target="_blank"
+                class="project-deployed-link">Live</a>
             </div>
-
-            <div class="contact-box">
-                <h3>Message Me</h3>
-                <form>
-                    <div class="name-email input">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="subject input">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                    </div>
-                    <div class="message input">
-                        <textarea name="message" id="message" cols="100" rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <input id="submit" type="submit" value="Submit">
-                </form>
-            </div>
+          </div>
         </div>
-    </section>
 
+        <!-- Fourth Project -->
+
+        <div class="work project-card">
+          <div id="project_Image">
+            <img src="images/paytm_mall_clone.png" />
+          </div>
+          <div class="layer">
+            <h2 class="project-heading project-title">Paytm Mall</h2>
+
+            <p class="project-description">
+              Paytm Mall strives hard to make online shopping a more pleasant and cost-effective experience by providing top- quality products. <br><br>
+              It was a collaborative project created in 5 days by a
+              team of 5 members.
+            </p>
+            <p>
+              <span class="tech-stack project-tech-stack">Tech Stack : </span> HTML | CSS
+              | JavaScript
+            </p>
+            <div>
+              <a href="https://github.com/Himanshu04210/-posh-title-8378" target="_blank"
+                class="project-github-link">Github</a>
+              <a href="https://startling-malabi-fa5c09.netlify.app/" target="_blank"
+                class="project-deployed-link">Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <a href="mailto:himanshupoly76075@gmail.com" id="contact-email"><i class="fa-solid fa-paper-plane"></i>
+              himanshupoly76075@gmail.com</a>
+          </p>
+          <p>
+            <a href="https://wa.me/+918957730421" id="contact-phone">
+              <i class="fa fa-whatsapp"></i> +91-8957730421</a>
+          </p>
+          <p>
+            <a href="https://www.google.com/maps/place/Hamirpur,+Uttar Pradesh/@26.1231876,74.2776996,12z/data=!3m1!4b1!4m6!3m5!1s0x396970b3e8f41283:0x957915f749945fa7!8m2!3d26.104585!4d74.3199038!16zL20vMDgwY2wx"
+              id="contact-phone">
+              <i class="fa-solid fa-location"></i>Hamirpur(UP.) India</a>
+          </p>
+          <div class="social-icons">
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/himanshu-sahu-bb4439246/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a id="contact-github" href="https://github.com/Himanshu04210" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+
+            <input type="text" name="name" placeholder="Your Name" required />
+
+            <input type="email" name="email" placeholder="Your Email" required />
+
+            <textarea name="message" rows="6" placeholder="Your Message" style="resize:none;" required></textarea>
+
+            <audio src="./audio/success.mp3" id="success-sound"></audio>
+
+            <button type="submit" class="btn2">Submit</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright @Himanshu Made with <i class="fa-solid fa-heart"></i> By Himanshu Sahu
+      </p>
+    </div>
+  </div>
 </body>
-<script src="index.js"></script>
-<script>
-    GitHubCalendar(".calendar", "Himanshu04210");
-    // or enable responsive functionality
-    GitHubCalendar(".calendar", "Himanshu04210", { responsive: true });
-</script>
 
 </html>
+
+<script src="index.js"></script>
+<script>
+  GitHubCalendar(".calendar", "Himanshu04210");
+  GitHubCalendar(".calendar", "Himanshu04210", { responsive: true });
+</script>
