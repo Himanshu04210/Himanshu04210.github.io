@@ -68,9 +68,6 @@ let skill_arr = [
   "./images/springboot.jpg",
   "./images/hibernate.jpg",
   "./images/mysql.png",
-  "./images/aws.png",
-  "./images/git.png",
-  "./images/github.jpg",
 ];
 let skill_name = [
   "HTML",
@@ -82,9 +79,6 @@ let skill_name = [
   "Spring Boot",
   "Hibernate",
   "mysql",
-  "AWS",
-  "GIT",
-  "GitHub",
 ];
 let count = 0;
 AppendSkills = (arr) => {
